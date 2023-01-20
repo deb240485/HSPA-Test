@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { IProperty } from '../models/Iproperty';
+import { ActivatedRoute } from '@angular/router';
 import { HousingService } from 'src/app/services/housing.service';
 import { IProperty } from '../IProperty';
 
@@ -10,18 +10,24 @@ import { IProperty } from '../IProperty';
 })
 
 export class PropertyListComponent implements OnInit {
-
+  SellRent = 1;
   properties: Array<IProperty>;
 
-  constructor(private housingService: HousingService) {
+  constructor(private route:ActivatedRoute,private housingService: HousingService) {
     this.properties = [];
   }
 
   ngOnInit(): void {
-    this.housingService.getAllProperties().subscribe(
+
+    if(this.route.snapshot.url.toString()){
+      this.SellRent = 2;
+    }
+
+    this.housingService.getAllProperties(this.SellRent).subscribe(
       data => {
         this.properties = data;
         console.log(data);
+        console.log();
       },error =>{
         console.log('httperror:');
         console.log(error);

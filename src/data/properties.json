@@ -1,36 +1,88 @@
 [{
   "Id":1,
-  "Name": "Birla House",
+  "SellRent":1,
+  "Name": "Birla Town",
   "Type": "House",
-  "Price":12000
+  "Price":100000,
+  "Image": "prop-1"
  },
  {
    "Id":2,
+   "SellRent":2,
    "Name": "Erose Villa",
    "Type": "House",
-   "Price":13000
+   "Price":25000,
+   "Image": "prop-2"
  },
  {
    "Id":3,
-   "Name": "Birla House",
+   "SellRent":1,
+   "Name": "JR Ellite House",
    "Type": "House",
-   "Price":14000
+   "Price":140000,
+   "Image": "prop-3"
  },
  {
    "Id":4,
-   "Name": "Birla House",
+   "SellRent":1,
+   "Name": "Sitara Mansion",
    "Type": "House",
-   "Price":15000
+   "Price":2500000,
+   "Image": "prop-4"
  },
  {
    "Id":5,
+   "SellRent":2,
    "Name": "Macro Home",
    "Type":"House",
-   "Price":14300
+   "Price":14300,
+   "Image": "prop-5"
  },
  {
    "Id":6,
+   "SellRent":2,
    "Name":"Pearl White",
    "Type":"House",
-   "Price":18000
- }]
+   "Price":18000,
+   "Image": "prop-6"
+ },
+ {
+  "Id":7,
+  "SellRent":2,
+  "Name":"Pearl Harbour",
+  "Type":"House",
+  "Price":45000,
+  "Image": "prop-7"
+},
+{
+  "Id":8,
+  "SellRent":1,
+  "Name":"Rose Villa",
+  "Type":"House",
+  "Price":450000,
+  "Image": "prop-8"
+},
+{
+  "Id":9,
+  "SellRent":2,
+  "Name":"Elentra House",
+  "Type":"House",
+  "Price":35000,
+  "Image": "prop-9"
+},
+{
+  "Id":10,
+  "SellRent":1,
+  "Name":"Dison Villa",
+  "Type":"House",
+  "Price":18000,
+  "Image": "prop-10"
+},
+{
+  "Id":11,
+  "SellRent":2,
+  "Name":"Metro Homes",
+  "Type":"House",
+  "Price":11000,
+  "Image": ""
+} ]
